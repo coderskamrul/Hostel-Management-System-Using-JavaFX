@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="851.0" style="-fx-background-color: #4a3d7a; -fx-border-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hostel.managment.system.LivedStudentViewController">
+   <children>
+      <TableView fx:id="tableLived" layoutX="5.0" layoutY="11.0" prefHeight="478.0" prefWidth="778.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+         <columns>
+            <TableColumn fx:id="mobileId" prefWidth="75.0" text="Mobile" />
+            <TableColumn fx:id="nameId" prefWidth="65.0" text="Name" />
+            <TableColumn fx:id="fatherId" prefWidth="110.0" text="Father" />
+            <TableColumn fx:id="motherId" prefWidth="82.0" text="mother" />
+            <TableColumn fx:id="emailId" prefWidth="123.0" text="email" />
+            <TableColumn fx:id="addressId" prefWidth="75.0" text="address" />
+            <TableColumn fx:id="collageId" prefWidth="86.0" text="collage" />
+            <TableColumn fx:id="IdNoId" prefWidth="70.0" text="Id no" />
+            <TableColumn fx:id="statusId" prefWidth="68.0" text="Status" />
+            <TableColumn fx:id="RoomId" prefWidth="101.0" text="Room" />
+         </columns>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </TableView>
+      <Label layoutX="277.0" layoutY="14.0" text="View Lived Students" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

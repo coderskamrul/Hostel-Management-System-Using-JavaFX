@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="497.0" prefWidth="851.0" style="-fx-background-color: #4a3d7a; -fx-border-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hostel.managment.system.AddStudentsController">
+   <children>
+      <Label layoutX="167.0" layoutY="95.0" text="Mobile No" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="128.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="255.0" text="Address" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="160.0" text="Father Name" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="318.0" text="Id Number" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="192.0" text="Mother Name" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="223.0" text="Email" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="287.0" text="Collage" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="MobileField" layoutX="290.0" layoutY="93.0" prefHeight="25.0" prefWidth="312.0" />
+      <TextField fx:id="NameField" layoutX="290.0" layoutY="126.0" prefHeight="25.0" prefWidth="312.0" />
+      <TextField fx:id="FnameField" layoutX="290.0" layoutY="158.0" prefHeight="25.0" prefWidth="312.0" />
+      <TextField fx:id="MnameField" layoutX="290.0" layoutY="190.0" prefHeight="25.0" prefWidth="312.0" />
+      <TextField fx:id="EmailField" layoutX="290.0" layoutY="221.0" prefHeight="25.0" prefWidth="312.0" />
+      <TextField fx:id="AddressField" layoutX="290.0" layoutY="253.0" prefHeight="25.0" prefWidth="312.0" />
+      <TextField fx:id="CollageField" layoutX="290.0" layoutY="285.0" prefHeight="25.0" prefWidth="312.0" />
+      <TextField fx:id="IdField" layoutX="290.0" layoutY="316.0" prefHeight="25.0" prefWidth="312.0" />
+      <Label layoutX="167.0" layoutY="350.0" text="Room No" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="RoomCombboField" layoutX="290.0" layoutY="348.0" prefHeight="25.0" prefWidth="312.0" />
+      <Button fx:id="saveBtn" layoutX="290.0" layoutY="388.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="34.0" prefWidth="121.0" text="Save">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="clearBtn" layoutX="481.0" layoutY="388.0" mnemonicParsing="false" onAction="#clearAction" prefHeight="25.0" prefWidth="121.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Label layoutX="260.0" layoutY="14.0" text="Add New Student" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

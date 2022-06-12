@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="541.0" prefWidth="851.0" style="-fx-background-color: #4a3d7a; -fx-border-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hostel.managment.system.RoomManagmentController">
+   <children>
+      <TableView fx:id="TableViews" layoutX="5.0" layoutY="252.0" prefHeight="233.0" prefWidth="846.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0">
+        <columns>
+          <TableColumn fx:id="room_col" prefWidth="209.0" text="Room Number" />
+          <TableColumn fx:id="activa_col" prefWidth="250.0" text="Activate" />
+            <TableColumn fx:id="status_col" prefWidth="229.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="118.0" layoutY="75.0" text="Room" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TextField fx:id="roomField" layoutX="176.0" layoutY="73.0" prefHeight="31.0" prefWidth="110.0" />
+      <CheckBox fx:id="cheackbpx" layoutX="479.0" layoutY="77.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="54.0" style="-fx-background-color: white;" text="Yes">
+         <font>
+            <Font size="14.0" />
+         </font></CheckBox>
+      <Label layoutX="306.0" layoutY="75.0" text="Activate or Decative" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Button layoutX="559.0" layoutY="72.0" mnemonicParsing="false" onAction="#saveRoomInfo" prefHeight="31.0" prefWidth="96.0" text="Saves">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label layoutX="66.0" layoutY="198.0" text="Room" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="roomsearchField" layoutX="124.0" layoutY="196.0" prefHeight="31.0" prefWidth="131.0" />
+      <CheckBox fx:id="cheackbpxUpdate" layoutX="535.0" layoutY="204.0" mnemonicParsing="false" />
+      <Label layoutX="374.0" layoutY="202.0" text="Activate or Decative" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="roomsearchBtn" layoutX="262.0" layoutY="197.0" mnemonicParsing="false" onAction="#roomsearchAction" prefHeight="31.0" prefWidth="96.0" text="Search" />
+      <Button fx:id="roomUpdateBtn" layoutX="567.0" layoutY="197.0" mnemonicParsing="false" onAction="#roomUpdateAction" prefHeight="31.0" prefWidth="103.0" text="Update" />
+      <Button fx:id="RoomDeleteBtn" layoutX="689.0" layoutY="196.0" mnemonicParsing="false" onAction="#RoomDeleteAction" prefHeight="32.0" prefWidth="96.0" text="Delete" />
+      <Label layoutX="262.0" layoutY="142.0" text="Update and Delete Room" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="27.0" />
+         </font>
+      </Label>
+      <Line endX="552.0" layoutX="299.0" layoutY="127.0" startX="-299.0" stroke="WHITE" />
+      <Label layoutX="296.0" layoutY="14.0" text="Room Managment" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="386.0" layoutY="262.0" text="Room List" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="27.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
